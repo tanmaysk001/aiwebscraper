@@ -45,8 +45,7 @@ with st.form("url_form"):
     
     if process_button:
         if not st.session_state.OPENAI_API_KEY:
-            st.warning("Please enter your OpenAI API key in the sidebar before processing a 
-URL.")
+            st.warning("Please enter your OpenAI API key in the sidebar before processing a URL.")
         elif source_url:
             try:
                 # Create the SmartScraperGraph instance
