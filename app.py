@@ -1,6 +1,9 @@
 import streamlit as st
 import nest_asyncio
 from scrapegraphai.graphs import SmartScraperGraph
+import os
+os.system("playwright install")
+
 
 # Apply nest_asyncio to avoid event loop issues with Streamlit
 nest_asyncio.apply()
